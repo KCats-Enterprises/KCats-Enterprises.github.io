@@ -9,11 +9,9 @@ grep -v '^\s*#' games.txt | while read -r folder repo sha; do
   dir="games/$folder"
   rm -rf "$dir"
   mkdir -p "$dir"
-  git -C "$dir" init -q
-  git -C "$dir" fetch -q --depth 1 "https://github.com/$repo.git" "$sha"
-  git -C "$dir" checkout -q FETCH_HEAD
+  curl -fsSL "https://codeload.github.com/$repo/tar.gz/$sha" | tar -xz --strip-components=1 -C "$dir"
   # Keep the game and its licence file, drop repo plumbing.
-  rm -rf "$dir/.git" "$dir/.github" "$dir/CNAME"
+  rm -rf "$dir/.github" "$dir/CNAME"
   [ -f "$dir/index.html" ] || { echo "No index.html in $repo"; exit 1; }
 done
 
