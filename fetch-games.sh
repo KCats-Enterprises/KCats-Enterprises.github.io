@@ -16,3 +16,11 @@ grep -v '^\s*#' games.txt | while read -r folder repo sha; do
   rm -rf "$dir/.git" "$dir/.github" "$dir/CNAME"
   [ -f "$dir/index.html" ] || { echo "No index.html in $repo"; exit 1; }
 done
+
+# Small fixes so the games run on this site.
+
+# We Become What We Behold ships every translation but never selects one.
+echo 'var textStrings = textStrings_EN;' >> games/we-become-what-we-behold/js/textStrings.js
+
+# Hextris asks for its font over http, which browsers block on an https site.
+sed -i 's#http://fonts.googleapis.com#https://fonts.googleapis.com#' games/hextris/index.html
