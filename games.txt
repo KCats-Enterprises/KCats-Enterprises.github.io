@@ -1,0 +1,15 @@
+# Open-source games fetched at publish time by fetch-games.sh.
+# Format: <folder under games/> <GitHub repo> <commit to use>
+# Each game is pinned to an exact commit so the site only changes when this file does.
+2048                      gabrielecirulli/2048                 478b6ec346e3787f589e4af751378d06ded4cbbc
+a-dark-room               doublespeakgames/adarkroom           1fada4620b6c66bd07bf15a3f1eb8223df8bc1d7
+adventure-with-anxiety    ncase/anxiety                        ba2421f7bc46125f0fedfebcc3171c73ef0e01f4
+black-hole-square         Quinten/black-hole-square            4865ba14ccf143b4d30117df0427932fe982a2f7
+hextris                   Hextris/hextris                      3f4847dc8fd7dab3d1c87e6324b9159d92fbd396
+n-gon                     landgreen/n-gon                      b3da22f8e03496a72c9609921382e4c82580934a
+particle-clicker          particle-clicker/particle-clicker    d6762d54eced10cca613262072fe5b44d157aa38
+space-company             sparticle999/SpaceCompany            da4881e465a3a713ff0ccf26efc7c30aad905a87
+trimps                    Trimps/Trimps.github.io              b9edb1dfee270ebf81bef8d934dc71276bf8d963
+we-become-what-we-behold  ncase/wbwwb                          7c68c7e44e66b5be95ebd07d22391de707090397
+webgl-fluid-sim           PavelDoGreat/WebGL-Fluid-Simulation  a2d292931f19d9b3b9f564e23e6c32729d2121c3
+xx142-b2exe               bencoder/js13k-2019                  ebf73c9796efb48e171c07149ec61a12d466f8c2

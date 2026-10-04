@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KCats Enterprises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="logo" href="index.html">🎮 KCats <span>Enterprises</span></a>
+    <nav><a href="index.html">&larr; All games</a></nav>
+  </header>
+
+  <main class="player" id="player"></main>
+
+  <script src="games.js"></script>
+  <script>
+    const game = GAMES.find(g => g.id === new URLSearchParams(location.search).get('g'));
+    const player = document.getElementById('player');
+
+    if (!game) {
+      player.innerHTML = '<h1>Game not found</h1><p><a href="index.html">Back to all games</a></p>';
+    } else {
+      document.title = game.name + ' - KCats Enterprises';
+      addRecent(game.id);
+      player.innerHTML = `
+        <h1>${game.icon} ${game.name}</h1>
+        <iframe id="frame" src="${game.path}" title="${game.name}" allowfullscreen></iframe>
+        <div class="meta">
+          <span>By ${game.author}</span>
+          <span>License: ${game.license}</span>
+          <a href="${game.source}" target="_blank" rel="noopener">Source code</a>
+          <button id="full">⛶ Fullscreen</button>
+        </div>`;
+      document.getElementById('full').addEventListener('click', () => {
+        document.getElementById('frame').requestFullscreen();
+      });
+    }
+  </script>
+</body>
+</html>

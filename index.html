@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KCats Enterprises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="logo" href="index.html">🎮 KCats <span>Enterprises</span></a>
+    <nav>
+      <a href="#" id="tab-all" class="on">All</a>
+      <a href="#" id="tab-recent">Recent</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to KCats Enterprises!</h1>
+    <p>Free open-source games. No downloads, no sign-up.</p>
+  </section>
+
+  <section class="controls">
+    <input id="search" type="search" placeholder="Search games" autocomplete="off">
+    <select id="sort" aria-label="Sort">
+      <option value="az">Sort: A to Z</option>
+      <option value="za">Sort: Z to A</option>
+    </select>
+    <select id="cat" aria-label="Category"></select>
+    <button id="random" title="Play a random game">🔀 Random</button>
+  </section>
+
+  <main class="grid" id="grid"></main>
+
+  <footer>
+    Every game here is open source. Author, license and source code are listed on each game's page.
+  </footer>
+
+  <script src="games.js"></script>
+  <script>
+    const $ = id => document.getElementById(id);
+    let recentOnly = false;
+
+    const cats = [...new Set(GAMES.map(g => g.cat))].sort();
+    $('cat').innerHTML = `<option value="">All categories (${GAMES.length})</option>` +
+      cats.map(c => `<option value="${c}">${c} (${GAMES.filter(g => g.cat === c).length})</option>`).join('');
+
+    function render() {
+      const q = $('search').value.trim().toLowerCase();
+      const cat = $('cat').value;
+      let list = GAMES.filter(g => g.name.toLowerCase().includes(q) && (!cat || g.cat === cat));
+      if (recentOnly) {
+        const recent = getRecent();
+        list = list.filter(g => recent.includes(g.id)).sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
+      } else {
+        list.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
+        if ($('sort').value === 'za') list.reverse();
+      }
+      $('grid').innerHTML = list.map(g => `
+        <a class="card" href="play.html?g=${g.id}" style="background:linear-gradient(135deg,${g.color})">
+          ${g.icon}<b>${g.name}</b>
+        </a>`).join('') ||
+        `<p class="empty">${recentOnly ? 'Nothing played yet.' : 'No games match that search.'}</p>`;
+    }
+
+    function setTab(recent) {
+      recentOnly = recent;
+      $('tab-all').classList.toggle('on', !recent);
+      $('tab-recent').classList.toggle('on', recent);
+      render();
+    }
+
+    $('search').addEventListener('input', render);
+    $('sort').addEventListener('change', render);
+    $('cat').addEventListener('change', render);
+    $('tab-all').addEventListener('click', e => { e.preventDefault(); setTab(false); });
+    $('tab-recent').addEventListener('click', e => { e.preventDefault(); setTab(true); });
+    $('random').addEventListener('click', () => {
+      location.href = 'play.html?g=' + GAMES[Math.random() * GAMES.length | 0].id;
+    });
+
+    render();
+  </script>
+</body>
+</html>
