@@ -190,6 +190,11 @@ const LINKS = [
   { id: 'neal-internet-roadtrip', name: 'Internet Roadtrip', cat: 'neal.fun', icon: '🚗', color: '#365314,#d9f99d', url: 'https://neal.fun/internet-roadtrip/' },
   { id: 'neal-sell-sell-sell', name: 'Sell Sell Sell!', cat: 'neal.fun', icon: '🏷️', color: '#831843,#fbcfe8', url: 'https://neal.fun/sell-sell-sell/' },
 ];
+
+// Official free browser games from their makers, linked rather than hosted.
+LINKS.push(
+  { id: 'minecraft-classic', name: 'Minecraft Classic', cat: 'Sandbox', icon: '🟫', color: '#3f6212,#854d0e', url: 'https://classic.minecraft.net/' },
+);
 GAMES.push(...LINKS);
 
 // Where a card goes: our play page, or the other site for linked games.
