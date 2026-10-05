@@ -1,5 +1,6 @@
 // The game list. To add a game: put its files in games/<folder>/ and add a line here.
-// Every game here is open source; author, license and source are shown on its play page.
+// Every hosted game is open source; author, license and source are shown on its play page.
+// Entries with a `url` instead of a `path` are links to games on other sites (see LINKS).
 const GAMES = [
   { id: '2048', name: '2048', cat: 'Puzzle', icon: '🔢', color: '#b45309,#fbbf24',
     path: 'games/2048/index.html', author: 'Gabriele Cirulli', license: 'MIT',
@@ -143,6 +144,40 @@ const GAMES = [
     path: 'games/xx142-b2exe/index.html', author: 'Ben Clark', license: 'MIT',
     source: 'https://github.com/bencoder/js13k-2019' },
 ];
+
+// Games on neal.fun by Neal Agarwal. They aren't open source, so we link to them instead of hosting copies.
+const LINKS = [
+  { id: 'neal-spend', name: 'Spend Bill Gates\' Money', cat: 'neal.fun', icon: '💸', color: '#166534,#4ade80', url: 'https://neal.fun/spend/' },
+  { id: 'neal-password-game', name: 'The Password Game', cat: 'neal.fun', icon: '🔑', color: '#1e293b,#fbbf24', url: 'https://neal.fun/password-game/' },
+  { id: 'neal-infinite-craft', name: 'Infinite Craft', cat: 'neal.fun', icon: '🔥', color: '#0f172a,#fb923c', url: 'https://neal.fun/infinite-craft/' },
+  { id: 'neal-deep-sea', name: 'The Deep Sea', cat: 'neal.fun', icon: '🐙', color: '#082f49,#0ea5e9', url: 'https://neal.fun/deep-sea/' },
+  { id: 'neal-space-elevator', name: 'Space Elevator', cat: 'neal.fun', icon: '🛰️', color: '#020617,#6366f1', url: 'https://neal.fun/space-elevator/' },
+  { id: 'neal-perfect-circle', name: 'Draw a Perfect Circle', cat: 'neal.fun', icon: '⭕', color: '#7f1d1d,#fca5a5', url: 'https://neal.fun/perfect-circle/' },
+  { id: 'neal-size-of-space', name: 'The Size of Space', cat: 'neal.fun', icon: '🪐', color: '#1e1b4b,#c4b5fd', url: 'https://neal.fun/size-of-space/' },
+  { id: 'neal-size-of-life', name: 'Size of Life', cat: 'neal.fun', icon: '🦠', color: '#14532d,#bbf7d0', url: 'https://neal.fun/size-of-life/' },
+  { id: 'neal-absurd-trolley-problems', name: 'Absurd Trolley Problems', cat: 'neal.fun', icon: '🚋', color: '#78350f,#fde68a', url: 'https://neal.fun/absurd-trolley-problems/' },
+  { id: 'neal-stimulation-clicker', name: 'Stimulation Clicker', cat: 'neal.fun', icon: '🤯', color: '#701a75,#f0abfc', url: 'https://neal.fun/stimulation-clicker/' },
+  { id: 'neal-not-a-robot', name: 'I\'m Not a Robot', cat: 'neal.fun', icon: '🤖', color: '#1e3a8a,#93c5fd', url: 'https://neal.fun/not-a-robot/' },
+  { id: 'neal-internet-artifacts', name: 'Internet Artifacts', cat: 'neal.fun', icon: '💾', color: '#3f3f46,#d4d4d8', url: 'https://neal.fun/internet-artifacts/' },
+  { id: 'neal-earth-reviews', name: 'Earth Reviews', cat: 'neal.fun', icon: '🌍', color: '#0c4a6e,#86efac', url: 'https://neal.fun/earth-reviews/' },
+  { id: 'neal-logos-from-memory', name: 'Draw Logos From Memory', cat: 'neal.fun', icon: '✏️', color: '#9a3412,#fdba74', url: 'https://neal.fun/logos-from-memory/' },
+  { id: 'neal-who-was-alive', name: 'Who Was Alive?', cat: 'neal.fun', icon: '👑', color: '#713f12,#fcd34d', url: 'https://neal.fun/who-was-alive/' },
+  { id: 'neal-universe-forecast', name: 'Universe Forecast', cat: 'neal.fun', icon: '🌌', color: '#0f172a,#a78bfa', url: 'https://neal.fun/universe-forecast/' },
+  { id: 'neal-ambient-chaos', name: 'Ambient Chaos', cat: 'neal.fun', icon: '🎧', color: '#134e4a,#5eead4', url: 'https://neal.fun/ambient-chaos/' },
+  { id: 'neal-auction-game', name: 'The Auction Game', cat: 'neal.fun', icon: '🔨', color: '#422006,#eab308', url: 'https://neal.fun/auction-game/' },
+  { id: 'neal-design-the-next-iphone', name: 'Design the Next iPhone', cat: 'neal.fun', icon: '📱', color: '#18181b,#e4e4e7', url: 'https://neal.fun/design-the-next-iphone/' },
+  { id: 'neal-asteroid-launcher', name: 'Asteroid Launcher', cat: 'neal.fun', icon: '☄️', color: '#450a0a,#f97316', url: 'https://neal.fun/asteroid-launcher/' },
+  { id: 'neal-life-stats', name: 'Life Stats', cat: 'neal.fun', icon: '📊', color: '#1e40af,#bfdbfe', url: 'https://neal.fun/life-stats/' },
+  { id: 'neal-constellation-draw', name: 'Constellation Draw', cat: 'neal.fun', icon: '⭐', color: '#0b1026,#fde047', url: 'https://neal.fun/constellation-draw/' },
+  { id: 'neal-internet-roadtrip', name: 'Internet Roadtrip', cat: 'neal.fun', icon: '🚗', color: '#365314,#d9f99d', url: 'https://neal.fun/internet-roadtrip/' },
+  { id: 'neal-sell-sell-sell', name: 'Sell Sell Sell!', cat: 'neal.fun', icon: '🏷️', color: '#831843,#fbcfe8', url: 'https://neal.fun/sell-sell-sell/' },
+];
+GAMES.push(...LINKS);
+
+// Where a card goes: our play page, or the other site for linked games.
+function gameLink(g) {
+  return g.url || 'play.html?g=' + g.id;
+}
 
 // Recently played list, newest first, kept in this browser only.
 function getRecent() {

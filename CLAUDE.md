@@ -8,3 +8,5 @@
   commercial games, non-commercial-only, or unlicensed.
 - To add a game: add a line to `games.txt` (folder, repo, pinned commit) and an entry to
   `games.js`. Put any small compatibility fix in `fetch-games.sh`.
+- Games that aren't open source (like neal.fun) are never copied here. They go in the
+  `LINKS` list in `games.js` with a `url`, and their cards open the original site.

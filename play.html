@@ -19,7 +19,9 @@
     const game = GAMES.find(g => g.id === new URLSearchParams(location.search).get('g'));
     const player = document.getElementById('player');
 
-    if (!game) {
+    if (game && game.url) {
+      location.replace(game.url);
+    } else if (!game) {
       player.innerHTML = '<h1>Game not found</h1><p><a href="index.html">Back to all games</a></p>';
     } else {
       document.title = game.name + ' - KCats Enterprises';

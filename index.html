@@ -33,7 +33,8 @@
   <main class="grid" id="grid"></main>
 
   <footer>
-    Every game here is open source. Author, license and source code are listed on each game's page.
+    Every game hosted here is open source. Author, license and source code are listed on each game's page.
+    Games marked ↗ are links to other sites, such as neal.fun, and open there in a new tab.
   </footer>
 
   <script src="games.js"></script>
@@ -57,8 +58,8 @@
         if ($('sort').value === 'za') list.reverse();
       }
       $('grid').innerHTML = list.map(g => `
-        <a class="card" href="play.html?g=${g.id}" style="background:linear-gradient(135deg,${g.color})">
-          ${g.icon}<b>${g.name}</b>
+        <a class="card" data-id="${g.id}" href="${gameLink(g)}"${g.url ? ' target="_blank" rel="noopener" title="Opens on ' + new URL(g.url).host + '"' : ''} style="background:linear-gradient(135deg,${g.color})">
+          ${g.icon}<b>${g.name}</b>${g.url ? '<i class="ext">↗</i>' : ''}
         </a>`).join('') ||
         `<p class="empty">${recentOnly ? 'Nothing played yet.' : 'No games match that search.'}</p>`;
     }
@@ -70,13 +71,21 @@
       render();
     }
 
+    // Linked games open on another site, so note them as played here.
+    $('grid').addEventListener('click', e => {
+      const card = e.target.closest('.card');
+      const game = card && GAMES.find(g => g.id === card.dataset.id);
+      if (game && game.url) addRecent(game.id);
+    });
+
     $('search').addEventListener('input', render);
     $('sort').addEventListener('change', render);
     $('cat').addEventListener('change', render);
     $('tab-all').addEventListener('click', e => { e.preventDefault(); setTab(false); });
     $('tab-recent').addEventListener('click', e => { e.preventDefault(); setTab(true); });
     $('random').addEventListener('click', () => {
-      location.href = 'play.html?g=' + GAMES[Math.random() * GAMES.length | 0].id;
+      const hosted = GAMES.filter(g => !g.url);
+      location.href = gameLink(hosted[Math.random() * hosted.length | 0]);
     });
 
     render();
