@@ -191,8 +191,9 @@ const LINKS = [
   { id: 'neal-sell-sell-sell', name: 'Sell Sell Sell!', cat: 'neal.fun', icon: '🏷️', color: '#831843,#fbcfe8', url: 'https://neal.fun/sell-sell-sell/' },
 ];
 
-// Official free browser games from their makers, linked rather than hosted.
+// Free browser games on their makers' sites or the Internet Archive, linked rather than hosted.
 LINKS.push(
+  { id: 'jimball', name: 'JimBall', cat: 'Retro', icon: '🏀', color: '#1e3a8a,#facc15', url: 'https://archive.org/details/jimball_juno_Ww12' },
   { id: 'minecraft-classic', name: 'Minecraft Classic', cat: 'Sandbox', icon: '🟫', color: '#3f6212,#854d0e', url: 'https://classic.minecraft.net/' },
 );
 GAMES.push(...LINKS);
