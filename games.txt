@@ -7,12 +7,15 @@ adventure-with-anxiety    ncase/anxiety                        ba2421f7bc46125f0
 alien-invasion            cykod/AlienInvasion                  d208e3c803c826999aa0592993c3c934dfcc5613
 asteroids                 dmcinnes/HTML5-Asteroids             930301cbda83ed3b120f64b801d937d077ee2da0
 astray                    wwwtyro/Astray                       d3c4f61f2cbbe35752fbfa205f85a41d7f9fe0f0
+battleboat                billmei/battleboat                   e30edf293346d9068e26f0480baca4490b87b6cc
 black-hole-square         Quinten/black-hole-square            4865ba14ccf143b4d30117df0427932fe982a2f7
 breakout                  jakesgordon/javascript-breakout      eed59e2affa9423b93d2ac8ff93061bb88b33284
+bubble-shooter            rembound/Bubble-Shooter-HTML5        2e62806ef5d7471f77566bc1cf6f2ac17a584c4d
 clumsy-bird               ellisonleao/clumsy-bird              fae3d487d5102af29fb3f78431cbd45e9b83aed3
 coming-out-simulator      ncase/coming-out-simulator-2014      69918f33e749117586ebd0fb57d9ec6ab047e7a3
 distance-incremental      Jacorb90/DistInc.github.io           6004f940fce82a42dd463dc2e4d50fd65b0dca5f
 elevator-saga             magwo/elevatorsaga                   e0c55bf8cf59243c32dc371b2cc7b2e3ec1664af
+emoji-minesweeper         muan/emoji-minesweeper               2187e371e9a0f87cf54a207031760fc33b858a9a
 evolution-of-trust        ncase/trust                          6ec45d73befdb922bd40654dd1c1c903a953562f
 evolve                    pmotschmann/Evolve                   3436358dcd03d9f9e071d51ea071e0a78c0322e4
 fireflies                 ncase/fireflies                      165d16c926a611db7e977e4d83a3f0428b3fbffd
@@ -25,6 +28,7 @@ incremental-mass          MrRedShark77/incremental-mass-rewritten e8e1f96f61e725
 its-a-doorable            ncase/door                           e4b218d2a5b9667cfca9b66fcc2c7ba38c5d2888
 littlejs                  KilledByAPixel/LittleJS              8f863c14d114e984a59f42c6ef4b98093581f677
 loopy                     ncase/loopy                          2d8e13f0a006f4024f27ad1712d7f9c2c1ad7cd9
+match-3                   rembound/Match-3-Game-HTML5          be7df47403668623ed40073fa87d39d9b4c7da2d
 n-gon                     landgreen/n-gon                      b3da22f8e03496a72c9609921382e4c82580934a
 neurotic-neurons          ncase/neurons                        1051f60b504740d1ca05e74b34679ad99e831b69
 parable-of-the-polygons   ncase/polygons                       3ec3fd74a52ce24f74790a47f117d1a3abefbbb7
@@ -34,6 +38,7 @@ prestige-tree             jacorb90/Prestige-Tree               cec9198c8ce9a5c6d
 radius-raid               jackrugile/radius-raid-js13k         361ab5166570cfc8a29a4fc15c9afba566117b66
 remember-anything         ncase/remember                       c42502c36f7abf658cf7b33fc10af76287b3bb81
 simple-chess-ai           lhartikk/simple-chess-ai             665606d574ba83a7f958121bd7c58903f162f902
+snake                     rembound/Snake-Game-HTML5            91030dd3cbec5b88fd67887ce6a51e4f108eeed0
 space-company             sparticle999/SpaceCompany            da4881e465a3a713ff0ccf26efc7c30aad905a87
 space-huggers             KilledByAPixel/SpaceHuggers          bdabe47ffb983d9c646e25b42e20de2338a37cc8
 t-rex-runner              wayou/t-rex-runner                   5455bfa408ec6b707c7300ff194b7390733a766d
@@ -42,6 +47,7 @@ the-pond                  Zolmeister/pond                      68fa8b542bff6c405
 to-build-a-better-ballot  ncase/ballot                         fc9716c57467b5889eac64dd6bcf3512a4e298c3
 tower-building            iamkun/tower_game                    c6fa84afe179b661fa71cf7cc8788d0c47ca2875
 trimps                    Trimps/Trimps.github.io              b9edb1dfee270ebf81bef8d934dc71276bf8d963
+voxel-sandbox             Refloow/Minecraft-Like-Voxel-Game    dd9fb196b1989ef8a896c7a2af6c5e9abec0750e
 we-become-what-we-behold  ncase/wbwwb                          7c68c7e44e66b5be95ebd07d22391de707090397
 webgl-fluid-sim           PavelDoGreat/WebGL-Fluid-Simulation  a2d292931f19d9b3b9f564e23e6c32729d2121c3
 wisdom-of-crowds          ncase/crowds                         9c475822142b6457767c94481b3ad66766e94bf1

@@ -12,7 +12,7 @@ grep -v '^\s*#' games.txt | while read -r folder repo sha; do
   curl -fsSL "https://codeload.github.com/$repo/tar.gz/$sha" | tar -xz --strip-components=1 -C "$dir"
   # Keep the game and its licence file, drop repo plumbing.
   rm -rf "$dir/.github" "$dir/CNAME"
-  [ -f "$dir/index.html" ] || { echo "No index.html in $repo"; exit 1; }
+  [ -n "$(find "$dir" -maxdepth 2 -name '*.html' -print -quit)" ] || { echo "No page found in $repo"; exit 1; }
 done
 
 # Small fixes so the games run on this site.
@@ -25,3 +25,6 @@ sed -i 's#http://fonts.googleapis.com#https://fonts.googleapis.com#' games/hextr
 
 # Astray loads its textures from the site root instead of its own folder.
 sed -i "s#loadTexture('/#loadTexture('#" games/astray/index.html
+
+# Emoji Minesweeper defaults to emoji images from a server that has shut down.
+sed -i 's#id="twemoji" checked#id="twemoji"#; s#id="emoji">#id="emoji" checked>#' games/emoji-minesweeper/index.html
