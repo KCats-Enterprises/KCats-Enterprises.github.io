@@ -22,3 +22,6 @@ echo 'var textStrings = textStrings_EN;' >> games/we-become-what-we-behold/js/te
 
 # Hextris asks for its font over http, which browsers block on an https site.
 sed -i 's#http://fonts.googleapis.com#https://fonts.googleapis.com#' games/hextris/index.html
+
+# Astray loads its textures from the site root instead of its own folder.
+sed -i "s#loadTexture('/#loadTexture('#" games/astray/index.html
