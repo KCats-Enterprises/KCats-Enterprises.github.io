@@ -13,6 +13,7 @@ bounce-back               KilledByAPixel/BounceBack            395fd046338e6c5d5
 breakout                  jakesgordon/javascript-breakout      eed59e2affa9423b93d2ac8ff93061bb88b33284
 bubble-shooter            rembound/Bubble-Shooter-HTML5        2e62806ef5d7471f77566bc1cf6f2ac17a584c4d
 clumsy-bird               ellisonleao/clumsy-bird              fae3d487d5102af29fb3f78431cbd45e9b83aed3
+coil                      leereilly/Coil                       ea6fd3afae10a6d8a53b07e82be4211619206ede
 coming-out-simulator      ncase/coming-out-simulator-2014      69918f33e749117586ebd0fb57d9ec6ab047e7a3
 distance-incremental      Jacorb90/DistInc.github.io           6004f940fce82a42dd463dc2e4d50fd65b0dca5f
 elevator-saga             magwo/elevatorsaga                   e0c55bf8cf59243c32dc371b2cc7b2e3ec1664af
@@ -22,6 +23,7 @@ evolve                    pmotschmann/Evolve                   3436358dcd03d9f9e
 fireflies                 ncase/fireflies                      165d16c926a611db7e977e4d83a3f0428b3fbffd
 flappy-2048               hczhcz/Flappy-2048                   1a8e9f0a56f6ac06c8c9099566a5454e886e8a02
 flexbox-froggy            thomaspark/flexboxfroggy             9a6feab850a56cbe9ad90f3afcc95e88335bbec8
+follow-me                 gamedolphin/follow_me_javascript_simon_clone a2a2c22c2b1354672c181dc2e03bc8f87da5079c
 grid-garden               thomaspark/gridgarden                0e262f7272d4992340eb556bdb9b2d502cc59932
 hexgl                     BKcore/HexGL                         6addc95a2fce3bf05f4d751823cc054c61a16d68
 hextris                   Hextris/hextris                      3f4847dc8fd7dab3d1c87e6324b9159d92fbd396
@@ -44,6 +46,7 @@ simple-chess-ai           lhartikk/simple-chess-ai             665606d574ba83a7f
 snake                     rembound/Snake-Game-HTML5            91030dd3cbec5b88fd67887ce6a51e4f108eeed0
 space-company             sparticle999/SpaceCompany            da4881e465a3a713ff0ccf26efc7c30aad905a87
 space-huggers             KilledByAPixel/SpaceHuggers          bdabe47ffb983d9c646e25b42e20de2338a37cc8
+swap                      nmoroze/swap                         a3cfb7d2d59d37dd3778d5de685a206cca4f1206
 t-rex-runner              wayou/t-rex-runner                   5455bfa408ec6b707c7300ff194b7390733a766d
 tetris                    jakesgordon/javascript-tetris        e5c0c42f7dac0f3514a55eff656c6e22e95d68ed
 the-pond                  Zolmeister/pond                      68fa8b542bff6c405cce83a6bd433e16e7b4e7f6
