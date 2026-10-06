@@ -28,3 +28,6 @@ sed -i "s#loadTexture('/#loadTexture('#" games/astray/index.html
 
 # Emoji Minesweeper defaults to emoji images from a server that has shut down.
 sed -i 's#id="twemoji" checked#id="twemoji"#; s#id="emoji">#id="emoji" checked>#' games/emoji-minesweeper/index.html
+
+# Space Invaders loads its sound from the site root instead of its own folder.
+sed -i 's#src="/space-invaders/shoot.mp3"#src="shoot.mp3"#' games/retro-games/space-invaders/index.html
