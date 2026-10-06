@@ -16,6 +16,7 @@ clumsy-bird               ellisonleao/clumsy-bird              fae3d487d5102af29
 coil                      leereilly/Coil                       ea6fd3afae10a6d8a53b07e82be4211619206ede
 coming-out-simulator      ncase/coming-out-simulator-2014      69918f33e749117586ebd0fb57d9ec6ab047e7a3
 distance-incremental      Jacorb90/DistInc.github.io           6004f940fce82a42dd463dc2e4d50fd65b0dca5f
+drunken-viking            cxong/DrunkenViking                  356d8e19f27060e3330de73fa1e0c68accfc5c79
 elevator-saga             magwo/elevatorsaga                   e0c55bf8cf59243c32dc371b2cc7b2e3ec1664af
 emoji-minesweeper         muan/emoji-minesweeper               2187e371e9a0f87cf54a207031760fc33b858a9a
 evolution-of-trust        ncase/trust                          6ec45d73befdb922bd40654dd1c1c903a953562f
@@ -36,6 +37,7 @@ n-gon                     landgreen/n-gon                      b3da22f8e03496a72
 neurotic-neurons          ncase/neurons                        1051f60b504740d1ca05e74b34679ad99e831b69
 os13k                     KilledByAPixel/OS13k                 671972146c3dd20479e783d6992367bd861bf614
 parable-of-the-polygons   ncase/polygons                       3ec3fd74a52ce24f74790a47f117d1a3abefbbb7
+parity                    abejfehr/parity                      730ecbd24d4cd821bd236f2a441f4e5e2b22654f
 particle-clicker          particle-clicker/particle-clicker    d6762d54eced10cca613262072fe5b44d157aa38
 pong                      jakesgordon/javascript-pong          ca3240536e4f79ab7144388e56ed19de715b6662
 prestige-tree             jacorb90/Prestige-Tree               cec9198c8ce9a5c6d107179871cbe84fab92ae0d
