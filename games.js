@@ -1,6 +1,7 @@
 // The game list. To add a game: put its files in games/<folder>/ and add a line here.
 // Every hosted game is open source; author, license and source are shown on its play page.
 // Entries with a `url` instead of a `path` are links to games on other sites (see LINKS).
+// Your own games live in my-games/<folder>/ (see my-games/README.md); `license` and `source` are optional.
 const GAMES = [
   { id: '2048', name: '2048', cat: 'Puzzle', icon: '🔢', color: '#b45309,#fbbf24',
     path: 'games/2048/index.html', author: 'Gabriele Cirulli', license: 'MIT',

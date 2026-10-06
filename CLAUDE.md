@@ -10,3 +10,5 @@
   `games.js`. Put any small compatibility fix in `fetch-games.sh`.
 - Games that aren't open source (like neal.fun) are never copied here. They go in the
   `LINKS` list in `games.js` with a `url`, and their cards open the original site.
+- The owner's own games go in `my-games/<folder>/` (committed directly, not via `games.txt`).
+  Their `games.js` entries may leave out `license` and `source`.

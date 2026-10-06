@@ -31,8 +31,8 @@
         <iframe id="frame" src="${game.path}" title="${game.name}" allowfullscreen></iframe>
         <div class="meta">
           <span>By ${game.author}</span>
-          <span>License: ${game.license}</span>
-          <a href="${game.source}" target="_blank" rel="noopener">Source code</a>
+          ${game.license ? `<span>License: ${game.license}</span>` : ''}
+          ${game.source ? `<a href="${game.source}" target="_blank" rel="noopener">Source code</a>` : ''}
           <button id="full">⛶ Fullscreen</button>
         </div>`;
       document.getElementById('full').addEventListener('click', () => {
