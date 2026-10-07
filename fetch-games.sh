@@ -31,3 +31,7 @@ sed -i 's#id="twemoji" checked#id="twemoji"#; s#id="emoji">#id="emoji" checked>#
 
 # Space Invaders loads its sound from the site root instead of its own folder.
 sed -i 's#src="/space-invaders/shoot.mp3"#src="shoot.mp3"#' games/retro-games/space-invaders/index.html
+
+# Sandspiel's build expects to sit at the top of its own site; point its paths at its folder.
+sed -i 's#\(src\|href\)="/#\1="./#g' games/sandspiel/index.html
+sed -i 's#\.p="/"#.p=""#' games/sandspiel/main.*.js
