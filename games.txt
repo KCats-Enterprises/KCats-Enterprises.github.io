@@ -15,6 +15,7 @@ black-hole-square         Quinten/black-hole-square            4865ba14ccf143b4d
 bounce-back               KilledByAPixel/BounceBack            395fd046338e6c5d5840d10e7fbd74132f90b8f6
 breakout                  jakesgordon/javascript-breakout      eed59e2affa9423b93d2ac8ff93061bb88b33284
 bubble-shooter            rembound/Bubble-Shooter-HTML5        2e62806ef5d7471f77566bc1cf6f2ac17a584c4d
+chess-3d                  FrenchYann/Chess3D                   662f1bd7c6b947ec27530f5929e4d33fd782a5b8
 clumsy-bird               ellisonleao/clumsy-bird              fae3d487d5102af29fb3f78431cbd45e9b83aed3
 coil                      leereilly/Coil                       ea6fd3afae10a6d8a53b07e82be4211619206ede
 coming-out-simulator      ncase/coming-out-simulator-2014      69918f33e749117586ebd0fb57d9ec6ab047e7a3
@@ -31,11 +32,13 @@ flappy-2048               hczhcz/Flappy-2048                   1a8e9f0a56f6ac06c
 flexbox-froggy            thomaspark/flexboxfroggy             9a6feab850a56cbe9ad90f3afcc95e88335bbec8
 follow-me                 gamedolphin/follow_me_javascript_simon_clone a2a2c22c2b1354672c181dc2e03bc8f87da5079c
 grid-garden               thomaspark/gridgarden                0e262f7272d4992340eb556bdb9b2d502cc59932
+heroine-dusk              clintbellanger/heroine-dusk          2a1f01deff724212a7843e363f9c656fd0b13430
 hexahedral                mminer/hexahedral                    d635821fee7050f85a704af0a1a53774169283ae
 hexgl                     BKcore/HexGL                         6addc95a2fce3bf05f4d751823cc054c61a16d68
 hextris                   Hextris/hextris                      3f4847dc8fd7dab3d1c87e6324b9159d92fbd396
 incremental-mass          MrRedShark77/incremental-mass-rewritten e8e1f96f61e7252cd1839a906b8d54f74a215e32
 its-a-doorable            ncase/door                           e4b218d2a5b9667cfca9b66fcc2c7ba38c5d2888
+jezzball                  tassaron/jezzball-transgender        265c9778d0b49c070841fa7203e11ae293be9cec
 littlejs                  KilledByAPixel/LittleJS              8f863c14d114e984a59f42c6ef4b98093581f677
 loopy                     ncase/loopy                          2d8e13f0a006f4024f27ad1712d7f9c2c1ad7cd9
 lost-beneath-the-surface  gamedolphin/Lost-Beneath-The-Surface 177c181a77a08949af28231a0c79f5dad9f833c7
@@ -55,6 +58,7 @@ retro-games               maryrosecook/retro-games             2c9a82216cd4a97bd
 sandspiel                 maxbittker/sandspiel                 24a63c60428cae13714946118f025d5d1484b344
 simple-chess-ai           lhartikk/simple-chess-ai             665606d574ba83a7f958121bd7c58903f162f902
 snake                     rembound/Snake-Game-HTML5            91030dd3cbec5b88fd67887ce6a51e4f108eeed0
+sootl                     andybalaam/sootl                     ab7b847f7de02d17f53f52020eaf2dd7050a9be8
 sorades-13k               maettig/starship-sorades-13k         02acb39d4af5ee85246fadd6996380eb10d98034
 space-company             sparticle999/SpaceCompany            da4881e465a3a713ff0ccf26efc7c30aad905a87
 space-huggers             KilledByAPixel/SpaceHuggers          bdabe47ffb983d9c646e25b42e20de2338a37cc8
