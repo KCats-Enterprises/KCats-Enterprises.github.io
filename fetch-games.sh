@@ -12,7 +12,7 @@ grep -v '^\s*#' games.txt | while read -r folder repo sha; do
   curl -fsSL "https://codeload.github.com/$repo/tar.gz/$sha" | tar -xz --strip-components=1 -C "$dir"
   # Keep the game and its licence file, drop repo plumbing.
   rm -rf "$dir/.github" "$dir/CNAME"
-  [ -n "$(find "$dir" -maxdepth 2 -name '*.html' -print -quit)" ] || { echo "No page found in $repo"; exit 1; }
+  [ -n "$(find "$dir" -maxdepth 3 -name '*.html' -print -quit)" ] || { echo "No page found in $repo"; exit 1; }
 done
 
 # Small fixes so the games run on this site.
