@@ -1,6 +1,7 @@
 # Open-source games fetched at publish time by fetch-games.sh.
 # Format: <folder under games/> <GitHub repo> <commit to use>
 # Each game is pinned to an exact commit so the site only changes when this file does.
+# For games that need building, the commit can come from the repo's built gh-pages branch.
 2048                      gabrielecirulli/2048                 478b6ec346e3787f589e4af751378d06ded4cbbc
 a-dark-room               doublespeakgames/adarkroom           1fada4620b6c66bd07bf15a3f1eb8223df8bc1d7
 adventure-with-anxiety    ncase/anxiety                        ba2421f7bc46125f0fedfebcc3171c73ef0e01f4
@@ -29,6 +30,7 @@ flappy-2048               hczhcz/Flappy-2048                   1a8e9f0a56f6ac06c
 flexbox-froggy            thomaspark/flexboxfroggy             9a6feab850a56cbe9ad90f3afcc95e88335bbec8
 follow-me                 gamedolphin/follow_me_javascript_simon_clone a2a2c22c2b1354672c181dc2e03bc8f87da5079c
 grid-garden               thomaspark/gridgarden                0e262f7272d4992340eb556bdb9b2d502cc59932
+hexahedral                mminer/hexahedral                    d635821fee7050f85a704af0a1a53774169283ae
 hexgl                     BKcore/HexGL                         6addc95a2fce3bf05f4d751823cc054c61a16d68
 hextris                   Hextris/hextris                      3f4847dc8fd7dab3d1c87e6324b9159d92fbd396
 incremental-mass          MrRedShark77/incremental-mass-rewritten e8e1f96f61e7252cd1839a906b8d54f74a215e32
@@ -54,6 +56,7 @@ snake                     rembound/Snake-Game-HTML5            91030dd3cbec5b88f
 sorades-13k               maettig/starship-sorades-13k         02acb39d4af5ee85246fadd6996380eb10d98034
 space-company             sparticle999/SpaceCompany            da4881e465a3a713ff0ccf26efc7c30aad905a87
 space-huggers             KilledByAPixel/SpaceHuggers          bdabe47ffb983d9c646e25b42e20de2338a37cc8
+squirts                   KrofDrakula/squirts                  7eac24b63511811248125e9fd3937a5da21f8e6e
 swap                      nmoroze/swap                         a3cfb7d2d59d37dd3778d5de685a206cca4f1206
 t-rex-runner              wayou/t-rex-runner                   5455bfa408ec6b707c7300ff194b7390733a766d
 tetris                    jakesgordon/javascript-tetris        e5c0c42f7dac0f3514a55eff656c6e22e95d68ed
