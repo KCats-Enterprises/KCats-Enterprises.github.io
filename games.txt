@@ -15,6 +15,7 @@ bubble-shooter            rembound/Bubble-Shooter-HTML5        2e62806ef5d7471f7
 clumsy-bird               ellisonleao/clumsy-bird              fae3d487d5102af29fb3f78431cbd45e9b83aed3
 coil                      leereilly/Coil                       ea6fd3afae10a6d8a53b07e82be4211619206ede
 coming-out-simulator      ncase/coming-out-simulator-2014      69918f33e749117586ebd0fb57d9ec6ab047e7a3
+custom-tetris             ondras/custom-tetris                 0e7101ab2c80a872c64152e5b60b949e7b0c978b
 distance-incremental      Jacorb90/DistInc.github.io           6004f940fce82a42dd463dc2e4d50fd65b0dca5f
 drunken-viking            cxong/DrunkenViking                  356d8e19f27060e3330de73fa1e0c68accfc5c79
 elevator-saga             magwo/elevatorsaga                   e0c55bf8cf59243c32dc371b2cc7b2e3ec1664af
@@ -33,6 +34,7 @@ its-a-doorable            ncase/door                           e4b218d2a5b9667cf
 littlejs                  KilledByAPixel/LittleJS              8f863c14d114e984a59f42c6ef4b98093581f677
 loopy                     ncase/loopy                          2d8e13f0a006f4024f27ad1712d7f9c2c1ad7cd9
 match-3                   rembound/Match-3-Game-HTML5          be7df47403668623ed40073fa87d39d9b4c7da2d
+matching-pairs            gamedolphin/matching-pairs           894e668edf1c559daa75fae70718f7de88e4a1ae
 n-gon                     landgreen/n-gon                      b3da22f8e03496a72c9609921382e4c82580934a
 neurotic-neurons          ncase/neurons                        1051f60b504740d1ca05e74b34679ad99e831b69
 os13k                     KilledByAPixel/OS13k                 671972146c3dd20479e783d6992367bd861bf614
