@@ -21,6 +21,7 @@ distance-incremental      Jacorb90/DistInc.github.io           6004f940fce82a42d
 drunken-viking            cxong/DrunkenViking                  356d8e19f27060e3330de73fa1e0c68accfc5c79
 elevator-saga             magwo/elevatorsaga                   e0c55bf8cf59243c32dc371b2cc7b2e3ec1664af
 emoji-minesweeper         muan/emoji-minesweeper               2187e371e9a0f87cf54a207031760fc33b858a9a
+emoji-simulator           ncase/sim                            ed10f69dd24a4ff5cb8d67efa8d121a5fbde8198
 evolution-of-trust        ncase/trust                          6ec45d73befdb922bd40654dd1c1c903a953562f
 evolve                    pmotschmann/Evolve                   3436358dcd03d9f9e071d51ea071e0a78c0322e4
 fireflies                 ncase/fireflies                      165d16c926a611db7e977e4d83a3f0428b3fbffd
@@ -66,5 +67,6 @@ underrun                  phoboslab/underrun                   f933e29152d7fc1ca
 voxel-sandbox             Refloow/Minecraft-Like-Voxel-Game    dd9fb196b1989ef8a896c7a2af6c5e9abec0750e
 we-become-what-we-behold  ncase/wbwwb                          7c68c7e44e66b5be95ebd07d22391de707090397
 webgl-fluid-sim           PavelDoGreat/WebGL-Fluid-Simulation  a2d292931f19d9b3b9f564e23e6c32729d2121c3
+what-happens-next         ncase/covid-19                       44622302aa7394d8ce521d6f603ea40993675e70
 wisdom-of-crowds          ncase/crowds                         9c475822142b6457767c94481b3ad66766e94bf1
 xx142-b2exe               bencoder/js13k-2019                  ebf73c9796efb48e171c07149ec61a12d466f8c2
