@@ -5,6 +5,7 @@
 2048                      gabrielecirulli/2048                 478b6ec346e3787f589e4af751378d06ded4cbbc
 3d-city                   lo-th/3d.city                        60fc6de2451ac6cf4df211a7cdae6c55c97e73c7
 a-dark-room               doublespeakgames/adarkroom           1fada4620b6c66bd07bf15a3f1eb8223df8bc1d7
+achtung-die-kurve         SimonAlling/kurve                    139a33e6f97e6208903e0ef73c3a513383d748fb
 adventure-with-anxiety    ncase/anxiety                        ba2421f7bc46125f0fedfebcc3171c73ef0e01f4
 alien-invasion            cykod/AlienInvasion                  d208e3c803c826999aa0592993c3c934dfcc5613
 antimatter-dimensions     IvarK/AntimatterDimensionsSourceCode 9ee01b34c77897a9088c5cc009e909c3d2074ae4
@@ -32,6 +33,7 @@ evolve                    pmotschmann/Evolve                   3436358dcd03d9f9e
 fireflies                 ncase/fireflies                      165d16c926a611db7e977e4d83a3f0428b3fbffd
 flappy-2048               hczhcz/Flappy-2048                   1a8e9f0a56f6ac06c8c9099566a5454e886e8a02
 flexbox-froggy            thomaspark/flexboxfroggy             9a6feab850a56cbe9ad90f3afcc95e88335bbec8
+fluid-table-tennis        anirudhjoshi/fluid_table_tennis      cd5addf3d22b1c6d4db0ce23b7503927ca04e30e
 follow-me                 gamedolphin/follow_me_javascript_simon_clone a2a2c22c2b1354672c181dc2e03bc8f87da5079c
 grid-garden               thomaspark/gridgarden                0e262f7272d4992340eb556bdb9b2d502cc59932
 heroine-dusk              clintbellanger/heroine-dusk          2a1f01deff724212a7843e363f9c656fd0b13430
